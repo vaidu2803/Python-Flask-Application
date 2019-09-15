@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Add Student Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <style type="text/css">
+        h1
+        {
+            color: white;
+            position: absolute;
+            top: 100px;
+            left: 470px;
+            font-family: 'Literata', serif;
+            letter-spacing: 2px;
+        }
+        table
+        {
+            position: absolute;
+            top: 190px;
+            left: 160px;
+            height: 300px;
+
+         }
+        
+        tr,td
+        {
+            color: white;
+            height: 40px;
+            width:150px;
+        }
+       
+        input[type=text] 
+        {
+            border: 2px solid black;
+            border-radius: 5px;  
+        }
+        div
+        {
+            position: absolute;top: 10px;
+            left: 350px;
+        }
+        button
+        {
+            position: absolute;
+            top: 330px;
+            left: 90px;
+            height: 30px;
+            width: 70px;
+            border:1px solid black;
+            border-radius: 4px;
+        }
+    </style>
+  
+</head>  
+<body>  
+    <h1>Student Information</h1> 
+    <div>  
+    <form action = "http://127.0.0.1:5000/add" method="post">  
+    <table>  
+        <tr><td>Id</td><td><input type="text" name="id"></td></tr>  
+        <tr><td>Name</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Contact Number</td><td><input type="text" name="contact"></td></tr>  
+        <tr><td>Address</td><td><input type="text" name="address"></td></tr>  
+        <tr><td>Qualifications</td><td><input type="text" name="qualifications"></td></tr>  
+        <tr><td>Percentage</td><td><input type="text" name="percentage"></td></tr>  
+        <tr><td>Passing Year</td><td><input type="text" name="passing_year"></td></tr>  
+        <tr><td><button>Submit</button></td></tr>  
+    </table>  
+    </form>  
+</div>
+</body>  
+</html>  
